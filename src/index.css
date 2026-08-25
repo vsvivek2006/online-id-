@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+  --font-display: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+:root {
+  --color-primary-50: #eefcf3;
+  --color-primary-100: #d6f7e1;
+  --color-primary-200: #b0eec6;
+  --color-primary-300: #78e0a4;
+  --color-primary-400: #3fce80;
+  --color-primary-500: #16b864;
+  --color-primary-600: #0b9650;
+  --color-primary-700: #087742;
+  --color-primary-800: #075e37;
+  --color-primary-900: #064c2e;
+  --color-primary-950: #022b19;
+}
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #02160e;
+  color: #e8f5ee;
+  overflow-x: hidden;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(22, 184, 100, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(22, 184, 100, 0.6); }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes bounce-subtle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-float { animation: float 4s ease-in-out infinite; }
+.animate-pulse-glow { animation: pulse-glow 2.5s ease-in-out infinite; }
+.animate-slide-up { animation: slide-up 0.7s ease-out forwards; }
+.animate-fade-in { animation: fade-in 1s ease-out forwards; }
+.animate-spin-slow { animation: spin-slow 20s linear infinite; }
+.animate-bounce-subtle { animation: bounce-subtle 2s ease-in-out infinite; }
+.animate-ticker { animation: ticker 30s linear infinite; }
+
+.text-shimmer {
+  background: linear-gradient(90deg, #16b864, #3fce80, #16b864);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s linear infinite;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(22, 184, 100, 0.3);
+}
+
+.gradient-border {
+  position: relative;
+  background: linear-gradient(135deg, rgba(22, 184, 100, 0.08), rgba(15, 118, 66, 0.04));
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(22, 184, 100, 0.5), rgba(15, 118, 66, 0.1), rgba(22, 184, 100, 0.3));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.hero-gradient {
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(22, 184, 100, 0.25), transparent),
+    radial-gradient(ellipse 60% 50% at 80% 50%, rgba(15, 118, 66, 0.15), transparent),
+    radial-gradient(ellipse 60% 50% at 20% 80%, rgba(22, 184, 100, 0.1), transparent);
+}
+
+.section-gradient {
+  background: linear-gradient(180deg, #02160e 0%, #032414 50%, #02160e 100%);
+}
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #02160e; }
+::-webkit-scrollbar-thumb { background: #0b9650; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #16b864; }
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.whatsapp-pulse {
+  position: relative;
+}
+
+.whatsapp-pulse::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  background: #25d366;
+  opacity: 0.3;
+  animation: pulse-glow 2s ease-in-out infinite;
+  z-index: -1;
+}
