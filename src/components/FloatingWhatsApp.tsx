@@ -17,13 +17,13 @@ export default function FloatingWhatsApp() {
       href={WHATSAPP_LINK}
       target="_blank"
       rel="noopener noreferrer"
-      className={`fixed bottom-6 right-6 z-50 flex items-center gap-2.5 px-5 py-3.5 bg-[#25d366] hover:bg-[#20bd5a] text-white font-semibold rounded-full shadow-2xl shadow-green-500/40 transition-all duration-500 ${
-        show ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0 pointer-events-none'
+      className={`hidden md:flex fixed bottom-6 right-6 z-50 items-center gap-2.5 px-5 py-3.5 bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-sm rounded-full shadow-lg shadow-emerald-600/30 hover:shadow-xl transition-all duration-300 active:scale-95 ${
+        show ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0 pointer-events-none'
       }`}
       aria-label="Contact us on WhatsApp"
     >
       <div className="whatsapp-pulse">
-        <MessageCircle className="w-6 h-6" />
+        <MessageCircle className="w-5 h-5 fill-current" />
       </div>
       <span className="hidden sm:inline">Get Cricket ID</span>
     </a>

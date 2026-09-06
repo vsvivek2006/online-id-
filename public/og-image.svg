@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#047857"/>
+      <stop offset="50%" style="stop-color:#065f46"/>
+      <stop offset="100%" style="stop-color:#064e3b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#34d399"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Subtle Cricket Pitch Lines -->
+  <rect x="100" y="50" width="1000" height="530" rx="24" fill="none" stroke="#10b981" stroke-width="2" stroke-opacity="0.3"/>
+  
+  <!-- Badge -->
+  <rect x="140" y="100" width="280" height="44" rx="22" fill="#10b981" fill-opacity="0.2" stroke="#34d399" stroke-width="1.5"/>
+  <text x="280" y="128" font-family="'Inter', sans-serif" font-size="16" font-weight="700" fill="#a7f3d0" text-anchor="middle" letter-spacing="1">VERIFIED PROVIDER 2026</text>
+
+  <!-- Main Headline -->
+  <text x="140" y="220" font-family="'Poppins', sans-serif" font-size="64" font-weight="900" fill="#ffffff">Online Cricket ID</text>
+  <text x="140" y="280" font-family="'Poppins', sans-serif" font-size="38" font-weight="700" fill="#34d399">Instant ₹100 Min Deposit • 24/7 UPI Withdrawals</text>
+
+  <!-- Description -->
+  <text x="140" y="350" font-family="'Inter', sans-serif" font-size="22" font-weight="400" fill="#d1fae5">
+    Official Verified Partner for Laser247, Lotus365, Betbhai9, Silver Exchange &amp; IPL 2026 IDs.
+  </text>
+  <text x="140" y="385" font-family="'Inter', sans-serif" font-size="22" font-weight="400" fill="#d1fae5">
+    2-Minute Activation via WhatsApp with 100% Payout Guarantee.
+  </text>
+
+  <!-- Feature Pills -->
+  <g transform="translate(140, 440)">
+    <!-- Pill 1 -->
+    <rect x="0" y="0" width="260" height="54" rx="14" fill="#ffffff" fill-opacity="0.1" stroke="#ffffff" stroke-opacity="0.2"/>
+    <text x="130" y="34" font-family="'Inter', sans-serif" font-size="18" font-weight="600" fill="#ffffff" text-anchor="middle">⚡ 2-Min Activation</text>
+
+    <!-- Pill 2 -->
+    <rect x="280" y="0" width="260" height="54" rx="14" fill="#ffffff" fill-opacity="0.1" stroke="#ffffff" stroke-opacity="0.2"/>
+    <text x="410" y="34" font-family="'Inter', sans-serif" font-size="18" font-weight="600" fill="#ffffff" text-anchor="middle">🛡️ 100% Safe &amp; Direct</text>
+
+    <!-- Pill 3 -->
+    <rect x="560" y="0" width="260" height="54" rx="14" fill="#ffffff" fill-opacity="0.1" stroke="#ffffff" stroke-opacity="0.2"/>
+    <text x="690" y="34" font-family="'Inter', sans-serif" font-size="18" font-weight="600" fill="#ffffff" text-anchor="middle">🏆 IPL 2026 Ready</text>
+  </g>
+
+  <!-- Bottom Bar -->
+  <rect x="0" y="590" width="1200" height="40" fill="#064e3b"/>
+  <text x="600" y="616" font-family="'Inter', sans-serif" font-size="16" font-weight="600" fill="#6ee7b7" text-anchor="middle">https://www.onlinecricketid.games • WhatsApp Support 24/7</text>
+</svg>
