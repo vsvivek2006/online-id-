@@ -194,16 +194,6 @@ function generateHomeHtml(baseTemplate) {
                     Explore 20+ Platforms
                   </a>
                 </div>
-                <div class="flex flex-wrap items-center justify-center lg:justify-start gap-x-3 gap-y-1.5 text-xs text-slate-500 pt-1">
-                  <span class="font-bold text-slate-700">Quick Links:</span>
-                  <a href="/ipl-cricket-id" class="text-emerald-800 font-semibold hover:underline">IPL 2026 Cricket ID</a>
-                  <span>•</span>
-                  <a href="/demo-cricket-id" class="text-emerald-800 font-semibold hover:underline">Free Demo ID</a>
-                  <span>•</span>
-                  <a href="/all-cricket-id" class="text-emerald-800 font-semibold hover:underline">All 20+ Platforms</a>
-                  <span>•</span>
-                  <a href="/guides/cricket-betting-deposit-upi" class="text-emerald-800 font-semibold hover:underline">UPI Deposit Guide</a>
-                </div>
                 <div class="grid grid-cols-3 gap-2 sm:gap-4 pt-6 border-t border-slate-100">
                   <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 text-center">
                     <p class="font-extrabold text-slate-900 text-xs sm:text-sm">24/7 Dedicated Support</p>

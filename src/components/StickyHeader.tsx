@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { MessageCircle, Headphones, ArrowUp } from 'lucide-react';
+import React from 'react';
+import { MessageCircle, Headphones } from 'lucide-react';
 
 const WHATSAPP_LINK = 'https://wa.link/onlinecricketid';
 
@@ -33,23 +33,9 @@ export default function StickyHeader({
   onNavigate,
   currentPath = '/',
 }: StickyHeaderProps) {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 200);
-    };
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   const handleNav = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
     e.preventDefault();
     onNavigate(path);
-  };
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
@@ -107,21 +93,8 @@ export default function StickyHeader({
             })}
           </nav>
 
-          {/* Right Actions: Desktop Scroll-to-Top, Support & WhatsApp */}
+          {/* Right Actions: Support & WhatsApp */}
           <div className="flex items-center gap-2 shrink-0">
-            {/* Desktop Scroll To Top Button in Top Right */}
-            {isScrolled && (
-              <button
-                type="button"
-                onClick={scrollToTop}
-                className="hidden lg:inline-flex items-center gap-1.5 min-h-[40px] px-3 py-2 rounded-xl text-xs font-extrabold text-slate-700 hover:text-emerald-700 bg-slate-100/90 hover:bg-emerald-50 border border-slate-200 hover:border-emerald-300 transition-all active:scale-95 shadow-2xs group animate-fade-in"
-                aria-label="Scroll to top of page"
-                title="Scroll to top"
-              >
-                <ArrowUp className="w-3.5 h-3.5 text-emerald-600 group-hover:-translate-y-0.5 transition-transform" />
-                <span>Top</span>
-              </button>
-            )}
 
             <a
               href="/contact"

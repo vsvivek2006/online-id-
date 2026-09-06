@@ -25,13 +25,13 @@ export default function ScrollToTop() {
         <motion.button
           type="button"
           onClick={scrollToTop}
-          initial={{ opacity: 0, scale: 0.8, y: -10 }}
+          initial={{ opacity: 0, scale: 0.8, y: 15 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
-          exit={{ opacity: 0, scale: 0.8, y: -10 }}
+          exit={{ opacity: 0, scale: 0.8, y: 15 }}
           whileHover={{ scale: 1.06, y: -2 }}
           whileTap={{ scale: 0.94 }}
           transition={{ duration: 0.2, ease: 'easeOut' }}
-          className="hidden md:flex fixed top-20 right-5 lg:top-24 lg:right-8 z-50 items-center gap-1.5 px-3.5 py-2 rounded-full bg-white/95 backdrop-blur-md text-emerald-800 border-2 border-emerald-500 shadow-lg shadow-emerald-900/10 hover:bg-emerald-50 hover:border-emerald-600 transition-colors font-extrabold text-xs cursor-pointer group"
+          className="fixed bottom-6 right-5 md:bottom-22 md:right-6 z-40 flex items-center gap-1.5 px-3 py-2.5 sm:px-3.5 sm:py-2.5 rounded-full bg-white/95 backdrop-blur-md text-emerald-800 border-2 border-emerald-500 shadow-xl shadow-slate-900/15 hover:bg-emerald-50 hover:border-emerald-600 transition-all font-extrabold text-xs cursor-pointer group"
           aria-label="Scroll to top of page"
           title="Scroll to top"
         >

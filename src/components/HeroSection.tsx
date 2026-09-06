@@ -155,47 +155,6 @@ export default function HeroSection({ onExploreClick, onNavigate }: HeroSectionP
             </motion.button>
           </motion.div>
 
-          {/* Contextual SEO Quick Access Links */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.4, delay: 0.35 }}
-            className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1.5 text-xs text-slate-500 pt-1"
-          >
-            <span className="font-bold text-slate-700">Quick Links:</span>
-            <a
-              href="/ipl-cricket-id"
-              onClick={(e) => handleNav(e, '/ipl-cricket-id')}
-              className="text-emerald-800 font-semibold hover:underline hover:text-emerald-950"
-            >
-              IPL 2026 Cricket ID
-            </a>
-            <span className="text-slate-300">•</span>
-            <a
-              href="/demo-cricket-id"
-              onClick={(e) => handleNav(e, '/demo-cricket-id')}
-              className="text-emerald-800 font-semibold hover:underline hover:text-emerald-950"
-            >
-              Free Demo ID
-            </a>
-            <span className="text-slate-300">•</span>
-            <a
-              href="/all-cricket-id"
-              onClick={(e) => handleNav(e, '/all-cricket-id')}
-              className="text-emerald-800 font-semibold hover:underline hover:text-emerald-950"
-            >
-              All 20+ Platforms
-            </a>
-            <span className="text-slate-300">•</span>
-            <a
-              href="/guides/cricket-betting-deposit-upi"
-              onClick={(e) => handleNav(e, '/guides/cricket-betting-deposit-upi')}
-              className="text-emerald-800 font-semibold hover:underline hover:text-emerald-950"
-            >
-              UPI Deposit Guide
-            </a>
-          </motion.div>
-
           {/* Immediate Trust Badges (YMYL Requirement: 24/7 Support, 5-Min Withdrawals, Secure Gateways) */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-4 border-t border-slate-100 text-left">
             {TRUST_BADGES.map((b) => (
