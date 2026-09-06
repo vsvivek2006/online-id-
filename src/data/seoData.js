@@ -1950,7 +1950,7 @@ const BASE_SEO_PAGES = {
       { label: 'Active Users', value: '10,000+ Regular Bettors' },
       { label: 'Payment Speed', value: '2 - 15 Minutes' },
       { label: 'Reputation', value: '5-Star Trust Rating' },
-      { label: 'Available IDs', value: '18+ Major Exchanges' }
+      { label: 'Available IDs', value: '20+ Major Exchanges' }
     ],
     contentSections: [
       {
@@ -2026,12 +2026,12 @@ const BASE_SEO_PAGES = {
     badge: 'Master Directory',
     intro: 'With dozens of cricket betting exchanges available, picking the right platform depends on your trading style, stake preferences, and market needs. Explore our comprehensive directory of all verified Cricket IDs.',
     highlights: [
-      { title: '18+ Major Exchanges', desc: 'Laser247, Lotus365, Betbhai9, Silver, Diamond, SkyExchange, Fairplay, and more.' },
+      { title: '20+ Major Exchanges', desc: 'Laser247, Lotus365, Betbhai9, Silver, Diamond, SkyExchange, Fairplay, and more.' },
       { title: 'Side-by-Side Comparison', desc: 'Compare minimum deposits, withdrawal speeds, and commission rates easily.' },
       { title: 'Single Unified Provider', desc: 'Manage multiple exchange accounts through one trusted WhatsApp desk.' }
     ],
     specs: [
-      { label: 'Exchanges Covered', value: '18 Platforms' },
+      { label: 'Exchanges Covered', value: '20+ Platforms' },
       { label: 'Minimum Starting Deposit', value: '₹100 Across All Platforms' },
       { label: 'Average Payout Time', value: '2 - 15 Minutes' }
     ],
@@ -2215,12 +2215,12 @@ const BASE_SEO_PAGES = {
     badge: 'User Agreement',
     intro: 'Please review our Terms and Conditions carefully. By using our website, requesting an Online Cricket ID, or interacting with our service desk, you agree to adhere to these operational guidelines.',
     highlights: [
-      { title: 'Age Requirement', desc: 'Users must be at least 18 years of age.' },
+      { title: 'Verified Identity', desc: 'Secure account access and identity protection.' },
       { title: 'One Account Per Person', desc: 'Prevent fraud and maintain account integrity.' },
       { title: 'Jurisdictional Compliance', desc: 'Users are responsible for verifying local legal regulations.' }
     ],
     specs: [
-      { label: 'Minimum Age', value: '18+ Strictly Enforced' },
+      { label: 'Platform Policy', value: 'Verified Users Only' },
       { label: 'Governing Policy', value: 'Fair Gaming Standards' }
     ],
     contentSections: [
@@ -2239,7 +2239,7 @@ const BASE_SEO_PAGES = {
       }
     ],
     faqs: [
-      { question: 'What is the minimum age to register?', answer: 'You must be 18 years or older to hold an account.' }
+      { question: 'Who can register for a cricket ID?', answer: 'Anyone with a verified WhatsApp number can request and activate an official cricket ID.' }
     ],
     relatedSlugs: ['privacy-policy', 'responsible-gaming', 'faq', 'about-us']
   },
@@ -2249,18 +2249,18 @@ const BASE_SEO_PAGES = {
     category: 'legal',
     categoryLabel: 'Legal & Policy',
     title: 'Responsible Gaming & Legal Disclaimer - Online Cricket ID',
-    metaDescription: 'Learn about responsible gaming practices, self-exclusion tools, and legal notices regarding real-money cricket betting under the Online Gaming Act.',
+    metaDescription: 'Learn about responsible gaming practices, self-exclusion tools, and legal notices regarding cricket gaming under the Online Gaming Act.',
     keywords: 'responsible gaming cricket id, betting legal disclaimer india, safe cricket betting, online gaming act 2025',
     h1: 'Responsible Gaming & Legal Disclaimer',
     badge: 'Play Responsibly',
-    intro: 'Sports betting should be an entertaining and enjoyable pastime, never a way to make guaranteed income or solve financial difficulties. We advocate strongly for disciplined bankroll management, healthy playing limits, and strict adherence to the law.',
+    intro: 'Sports entertainment should always be an enjoyable pastime. We advocate strongly for disciplined bankroll management, healthy playing limits, and strict adherence to fair play standards.',
     highlights: [
       { title: 'Set Spending Limits', desc: 'Always decide on a fixed entertainment budget before placing bets.' },
       { title: 'Self-Exclusion Options', desc: 'Request temporary or permanent account suspension whenever needed.' },
       { title: 'Legal Awareness', desc: 'Stay informed regarding legal gaming statutes in your specific state.' }
     ],
     specs: [
-      { label: 'Target Age', value: '18+ Only' },
+      { label: 'Access Policy', value: 'Verified Members' },
       { label: 'Notice', value: 'Informational Website Only' }
     ],
     contentSections: [

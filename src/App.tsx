@@ -252,7 +252,7 @@ function App() {
         )}
       </main>
 
-      {/* Compliance Footer: 18+ warning, responsible gaming disclaimer & verified business info */}
+      {/* Compliance Footer: verified business info & legal disclosure */}
       <ComplianceFooter onNavigate={navigate} />
 
       {/* Desktop Floating Scroll-to-Top in Top Right */}

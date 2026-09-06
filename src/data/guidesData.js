@@ -479,7 +479,7 @@ export const GUIDE_TAKEAWAYS = {
       'Online Gaming Act, 2025 provides central guidelines while reserving state powers.',
       'AP, Telangana, Assam, Nagaland, Odisha & Sikkim enforce restrictive state gaming statutes.',
       'Permissive status applies across Maharashtra, Delhi, Karnataka, Gujarat, and UP.',
-      'Strict 18+ age requirement; all winnings taxable under Section 115BBJ at 30%.',
+      'Tax compliance: all net winnings taxable under Section 115BBJ at 30%.',
     ],
     keyPoints: ['2026 Regulatory Status', 'The 2025 Central Act', 'Restricted States', 'User Responsibilities'],
   },

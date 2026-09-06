@@ -74,9 +74,6 @@ export default function StickyHeader({
                 <span className="text-slate-900 font-extrabold text-sm sm:text-base tracking-tight group-hover:text-emerald-700 transition-colors">
                   Online Cricket ID
                 </span>
-                <span className="px-1.5 py-0.5 rounded-md bg-amber-50 border border-amber-300 text-amber-800 font-black text-[10px] leading-none shrink-0">
-                  18+
-                </span>
               </div>
               <span className="text-emerald-700 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider block">
                 Official Provider Network

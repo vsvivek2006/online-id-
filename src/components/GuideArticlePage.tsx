@@ -777,7 +777,7 @@ export default function GuideArticlePage({ article, onNavigate }: GuideArticlePa
               <div className="bg-amber-50/80 border border-amber-200/90 rounded-2xl p-4">
                 <p className="text-amber-900 text-xs font-bold mb-1">⚖️ Compliance &amp; Legal Notice</p>
                 <p className="text-amber-800 text-[11px] leading-relaxed mb-2">
-                  18+ only. Real-money gaming is subject to state-level regulations under the Online Gaming Act, 2025. Please review our mandatory legal disclosure.
+                  Real-money gaming is subject to state-level regulations under the Online Gaming Act, 2025. Please review our mandatory legal disclosure.
                 </p>
                 <a
                   href="/legal"
@@ -787,7 +787,7 @@ export default function GuideArticlePage({ article, onNavigate }: GuideArticlePa
                   }}
                   className="text-amber-900 font-bold text-xs underline hover:text-amber-700"
                 >
-                  Read Legal &amp; Responsible Gaming Policy &rarr;
+                  Read Legal &amp; Compliance Policy &rarr;
                 </a>
               </div>
 

@@ -1,4 +1,4 @@
-import { ShieldAlert, Mail, MessageCircle, Globe, PhoneCall, Headphones } from 'lucide-react';
+import { Mail, MessageCircle, Globe, PhoneCall, Headphones } from 'lucide-react';
 
 const WHATSAPP_LINK = 'https://wa.link/onlinecricketid';
 
@@ -11,35 +11,7 @@ export default function ComplianceFooter({ onNavigate }: ComplianceFooterProps) 
     <footer className="bg-slate-900 text-slate-400 pt-12 pb-16 border-t border-slate-800 text-xs">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         
-        {/* Row 1: 18+ Regulatory Warning & Responsible Gaming Banner */}
-        <div className="bg-slate-800/80 rounded-2xl p-4 sm:p-6 border border-slate-700/80 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-          <div className="flex items-start sm:items-center gap-3.5">
-            <div className="w-12 h-12 aspect-square rounded-xl bg-rose-500/20 border-2 border-rose-500 text-rose-400 flex items-center justify-center font-black text-lg shrink-0">
-              18+
-            </div>
-            <div>
-              <div className="flex items-center gap-2">
-                <ShieldAlert className="w-4 h-4 text-rose-400" />
-                <h2 className="text-white font-bold text-sm">Age Restriction &amp; Financial Risk Warning</h2>
-              </div>
-              <p className="text-slate-400 text-xs mt-0.5 leading-relaxed">
-                Participation in real-money sports gaming involves financial risk and may be habit-forming. You must be 18 years of age or older to use this service.
-              </p>
-            </div>
-          </div>
-
-          <div className="shrink-0 flex items-center gap-2">
-            <button
-              type="button"
-              onClick={() => onNavigate('/responsible-gaming')}
-              className="min-h-[48px] px-4 rounded-xl bg-slate-700 hover:bg-slate-600 text-slate-200 font-bold text-xs transition-colors"
-            >
-              Responsible Gaming Policy
-            </button>
-          </div>
-        </div>
-
-        {/* Row 2: Business Transparency & Verified Contact Info */}
+        {/* Row 1: Business Transparency & Verified Contact Info */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           
           {/* Brand & Mission */}
@@ -167,13 +139,13 @@ export default function ComplianceFooter({ onNavigate }: ComplianceFooterProps) 
 
         </div>
 
-        {/* Row 3: Statutory Legal Disclaimer (India Online Gaming Act 2025 Compliance) */}
+        {/* Row 2: Statutory Legal Notice */}
         <div className="pt-6 border-t border-slate-800 text-[11px] text-slate-500 leading-relaxed space-y-2">
           <p>
             <strong className="text-slate-400 font-semibold">Important Legal Notice:</strong> In accordance with the Online Gaming Act, 2025 and applicable state regulations in India, real-money sports gaming may be restricted in certain states (including Andhra Pradesh, Telangana, Assam, and Odisha). This platform helps players safely connect with verified and licensed international cricket exchanges.
           </p>
           <p>
-            Players must be 18+ and are advised to check local state rules before depositing funds. Please play responsibly, set personal spending limits, and enjoy cricket gaming as entertainment.
+            Players are advised to check local state rules before depositing funds. Enjoy cricket gaming with verified official exchanges.
           </p>
         </div>
 

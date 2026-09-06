@@ -129,7 +129,6 @@ function generateHomeHtml(baseTemplate) {
               <div class="leading-tight">
                 <div class="flex items-center gap-1.5">
                   <span class="text-slate-900 font-extrabold text-sm sm:text-base tracking-tight">Online Cricket ID</span>
-                  <span class="px-1.5 py-0.5 rounded-md bg-amber-50 border border-amber-300 text-amber-800 font-black text-[10px] leading-none shrink-0">18+</span>
                 </div>
                 <span class="text-emerald-700 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider block">Official Provider Network</span>
               </div>
@@ -462,22 +461,7 @@ function generateHomeHtml(baseTemplate) {
       <!-- Compliance & E-E-A-T Footer -->
       <footer class="bg-slate-950 text-slate-400 pt-12 pb-16 border-t border-slate-800 text-xs">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-          <div class="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div class="flex items-center gap-3">
-              <span class="w-12 h-12 rounded-xl bg-amber-500/10 border-2 border-amber-500 text-amber-500 flex items-center justify-center font-black text-xl shrink-0">
-                18+
-              </span>
-              <div>
-                <p class="text-white font-bold text-sm">Age Restriction Notice (Strict 18+ Only)</p>
-                <p class="text-slate-400 text-xs">Online cricket gaming and sports betting carry financial risk and may be habit-forming. Play responsibly.</p>
-              </div>
-            </div>
-            <a href="https://wa.link/onlinecricketid" target="_blank" rel="noopener noreferrer" class="shrink-0 px-4 py-2.5 rounded-xl bg-emerald-600 text-white font-bold text-xs hover:bg-emerald-500 transition-colors min-h-[48px] flex items-center justify-center">
-              24/7 WhatsApp Support
-            </a>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-4 gap-6 pt-4 border-t border-slate-800/80">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
             <div class="md:col-span-2 space-y-2">
               <span class="text-white font-extrabold text-base">Online Cricket ID Provider</span>
               <p class="text-slate-400 text-xs leading-relaxed max-w-md">
@@ -504,7 +488,7 @@ function generateHomeHtml(baseTemplate) {
           </div>
 
           <div class="pt-6 border-t border-slate-800 text-[11px] text-slate-400 space-y-2">
-            <p><strong>Important Legal Notice:</strong> Under the Online Gaming Act, 2025, participation in real-money sports gaming may be restricted in certain states. Players must be 18+ and are responsible for checking local rules. We help players connect with verified, licensed international cricket exchanges safely.</p>
+            <p><strong>Important Legal Notice:</strong> Under the Online Gaming Act, 2025, participation in real-money sports gaming may be restricted in certain states. Players are responsible for checking local rules. We help players connect with verified, licensed international cricket exchanges safely.</p>
             <p>© 2026 Online Cricket ID Provider. All rights reserved.</p>
           </div>
         </div>

@@ -31,7 +31,7 @@ interface SectionNavItem {
 const SECTIONS: SectionNavItem[] = [
   { id: 'terms', label: 'Terms of Service', icon: FileText },
   { id: 'privacy', label: 'Privacy & Data Security', icon: Lock },
-  { id: 'responsible-gaming', label: 'Responsible Gaming (18+)', icon: ShieldCheck },
+  { id: 'responsible-gaming', label: 'Responsible Gaming', icon: ShieldCheck },
   { id: 'jurisdiction', label: 'Restricted Jurisdictions', icon: AlertTriangle },
   { id: 'support-hook', label: 'Compliance Helpdesk', icon: MessageCircle },
 ];
@@ -396,24 +396,24 @@ export default function LegalPage({ onNavigate }: LegalPageProps) {
                 </div>
 
                 <h2 id="rg-heading" className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mb-6">
-                  Responsible Gaming &amp; 18+ Underage Protection
+                  Responsible Gaming &amp; Player Protection
                 </h2>
 
                 <div className="prose prose-slate max-w-none text-xs sm:text-sm leading-relaxed prose-headings:font-bold prose-headings:text-slate-900 prose-headings:tracking-tight prose-p:text-slate-600 prose-li:text-slate-600">
                   <p>
-                    Sports trading and fantasy cricket wagering should always remain an exciting recreational entertainment activity. It must never be viewed as an alternative source of employment, guaranteed income, or an avenue to settle existing personal debt.
+                    Sports trading and cricket wagering should always remain an exciting recreational entertainment activity. It must never be viewed as an alternative source of employment, guaranteed income, or an avenue to settle existing personal debt.
                   </p>
 
                   <div className="p-4 rounded-2xl bg-slate-900 text-white not-prose my-6 flex items-start gap-3.5">
-                    <div className="w-10 h-10 rounded-xl bg-rose-500/20 border border-rose-500 text-rose-400 font-black text-sm flex items-center justify-center shrink-0">
-                      18+
+                    <div className="w-10 h-10 rounded-xl bg-emerald-500/20 border border-emerald-500 text-emerald-400 font-black text-sm flex items-center justify-center shrink-0">
+                      ✓
                     </div>
                     <div className="text-xs">
                       <strong className="text-white font-bold block mb-0.5">
-                        Strict Underage Gambling Prohibition
+                        Fair Play &amp; Account Integrity
                       </strong>
                       <span className="text-slate-300 leading-relaxed">
-                        Individuals under the age of 18 are strictly prohibited from opening an account, depositing money, or participating in real-money sports betting. We conduct random age verification checks and immediately freeze accounts opened by minors.
+                        We promote a fair, secure, and disciplined gaming environment. We conduct account verification to protect user credentials and ensure fair platform integrity across all exchanges.
                       </span>
                     </div>
                   </div>
