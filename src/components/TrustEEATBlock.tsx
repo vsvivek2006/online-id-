@@ -1,10 +1,21 @@
 import { ShieldCheck, Lock, CheckCircle2, MessageCircle, Zap } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { HOW_IT_WORKS_STEPS, SECURITY_FEATURES } from '@/data/platformData';
+import { SECURITY_FEATURES } from '@/data/platformData';
 
 const WHATSAPP_LINK = 'https://wa.link/onlinecricketid';
 
-export default function TrustEEATBlock() {
+interface TrustEEATBlockProps {
+  onNavigate?: (path: string) => void;
+}
+
+export default function TrustEEATBlock({ onNavigate }: TrustEEATBlockProps) {
+  const handleNav = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
+    if (onNavigate) {
+      e.preventDefault();
+      onNavigate(path);
+    }
+  };
+
   return (
     <section className="py-12 sm:py-16 bg-white border-b border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 sm:space-y-16">
@@ -27,35 +38,129 @@ export default function TrustEEATBlock() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 relative">
-            {HOW_IT_WORKS_STEPS.map((s) => (
-              <motion.div
-                key={s.step}
-                whileHover={{ y: -3, transition: { duration: 0.2 } }}
-                className="bg-slate-50/80 rounded-2xl p-5 sm:p-6 border border-slate-200 shadow-2xs hover:border-emerald-400 hover:bg-white transition-all flex flex-col justify-between"
-              >
-                <div>
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="w-10 h-10 rounded-xl bg-emerald-600 text-white font-black text-sm flex items-center justify-center shadow-xs">
-                      {s.step}
-                    </div>
-                    <span className="px-2.5 py-0.5 rounded-full bg-emerald-100/70 text-emerald-900 font-bold text-[10px] uppercase tracking-wide">
-                      {s.timeEstimate}
-                    </span>
+            {/* Step 1 */}
+            <motion.div
+              whileHover={{ y: -3, transition: { duration: 0.2 } }}
+              className="bg-slate-50/80 rounded-2xl p-5 sm:p-6 border border-slate-200 shadow-2xs hover:border-emerald-400 hover:bg-white transition-all flex flex-col justify-between"
+            >
+              <div>
+                <div className="flex items-center justify-between mb-4">
+                  <div className="w-10 h-10 rounded-xl bg-emerald-600 text-white font-black text-sm flex items-center justify-center shadow-xs">
+                    1
                   </div>
-                  <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-1.5">
-                    {s.title}
-                  </h3>
-                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
-                    {s.description}
-                  </p>
+                  <span className="px-2.5 py-0.5 rounded-full bg-emerald-100/70 text-emerald-900 font-bold text-[10px] uppercase tracking-wide">
+                    30 Seconds
+                  </span>
                 </div>
+                <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-1.5">
+                  Choose Your Exchange
+                </h3>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                  Select{' '}
+                  <a
+                    href="/laser247-cricket-id"
+                    onClick={(e) => handleNav(e, '/laser247-cricket-id')}
+                    className="font-bold text-emerald-800 underline decoration-emerald-300 hover:text-emerald-950"
+                  >
+                    Laser247
+                  </a>
+                  ,{' '}
+                  <a
+                    href="/lotus365-cricket-id"
+                    onClick={(e) => handleNav(e, '/lotus365-cricket-id')}
+                    className="font-bold text-emerald-800 underline decoration-emerald-300 hover:text-emerald-950"
+                  >
+                    Lotus365
+                  </a>
+                  , or browse our{' '}
+                  <a
+                    href="/all-cricket-id"
+                    onClick={(e) => handleNav(e, '/all-cricket-id')}
+                    className="font-bold text-emerald-800 underline decoration-emerald-300 hover:text-emerald-950"
+                  >
+                    20+ platforms
+                  </a>{' '}
+                  and connect on WhatsApp.
+                </p>
+              </div>
 
-                <div className="pt-3 border-t border-slate-200/80 flex items-center justify-between text-xs font-semibold text-emerald-800">
-                  <span>Verified Process</span>
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+              <div className="pt-3 border-t border-slate-200/80 flex items-center justify-between text-xs font-semibold text-emerald-800">
+                <span>Verified Partners</span>
+                <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+              </div>
+            </motion.div>
+
+            {/* Step 2 */}
+            <motion.div
+              whileHover={{ y: -3, transition: { duration: 0.2 } }}
+              className="bg-slate-50/80 rounded-2xl p-5 sm:p-6 border border-slate-200 shadow-2xs hover:border-emerald-400 hover:bg-white transition-all flex flex-col justify-between"
+            >
+              <div>
+                <div className="flex items-center justify-between mb-4">
+                  <div className="w-10 h-10 rounded-xl bg-emerald-600 text-white font-black text-sm flex items-center justify-center shadow-xs">
+                    2
+                  </div>
+                  <span className="px-2.5 py-0.5 rounded-full bg-emerald-100/70 text-emerald-900 font-bold text-[10px] uppercase tracking-wide">
+                    45 Seconds
+                  </span>
                 </div>
-              </motion.div>
-            ))}
+                <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-1.5">
+                  Deposit Minimum ₹100
+                </h3>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                  Scan the verified merchant UPI QR code using PhonePe, GPay, or Paytm. Follow our{' '}
+                  <a
+                    href="/guides/cricket-betting-deposit-upi"
+                    onClick={(e) => handleNav(e, '/guides/cricket-betting-deposit-upi')}
+                    className="font-bold text-emerald-800 underline decoration-emerald-300 hover:text-emerald-950"
+                  >
+                    UPI deposit guide
+                  </a>{' '}
+                  for 100% instant credit.
+                </p>
+              </div>
+
+              <div className="pt-3 border-t border-slate-200/80 flex items-center justify-between text-xs font-semibold text-emerald-800">
+                <span>Direct UPI Clearance</span>
+                <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+              </div>
+            </motion.div>
+
+            {/* Step 3 */}
+            <motion.div
+              whileHover={{ y: -3, transition: { duration: 0.2 } }}
+              className="bg-slate-50/80 rounded-2xl p-5 sm:p-6 border border-slate-200 shadow-2xs hover:border-emerald-400 hover:bg-white transition-all flex flex-col justify-between"
+            >
+              <div>
+                <div className="flex items-center justify-between mb-4">
+                  <div className="w-10 h-10 rounded-xl bg-emerald-600 text-white font-black text-sm flex items-center justify-center shadow-xs">
+                    3
+                  </div>
+                  <span className="px-2.5 py-0.5 rounded-full bg-emerald-100/70 text-emerald-900 font-bold text-[10px] uppercase tracking-wide">
+                    Under 60 Seconds
+                  </span>
+                </div>
+                <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-1.5">
+                  Receive Official ID &amp; Play
+                </h3>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                  Receive your unique login ID, password, and URL on WhatsApp. Want to practice first? Try a{' '}
+                  <a
+                    href="/demo-cricket-id"
+                    onClick={(e) => handleNav(e, '/demo-cricket-id')}
+                    className="font-bold text-emerald-800 underline decoration-emerald-300 hover:text-emerald-950"
+                  >
+                    free demo ID
+                  </a>{' '}
+                  with dummy coins.
+                </p>
+              </div>
+
+              <div className="pt-3 border-t border-slate-200/80 flex items-center justify-between text-xs font-semibold text-emerald-800">
+                <span>Instant Access</span>
+                <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+              </div>
+            </motion.div>
           </div>
 
           <div className="mt-8 text-center">
@@ -118,16 +223,34 @@ export default function TrustEEATBlock() {
               <div className="text-slate-500 text-[11px] font-medium">Active Bettors</div>
             </div>
             <div>
-              <div className="text-emerald-800 font-extrabold text-base sm:text-lg">₹100</div>
-              <div className="text-slate-500 text-[11px] font-medium">Min Starting Deposit</div>
+              <a
+                href="/minimum-deposit-cricket-id"
+                onClick={(e) => handleNav(e, '/minimum-deposit-cricket-id')}
+                className="group block"
+              >
+                <div className="text-emerald-800 font-extrabold text-base sm:text-lg group-hover:underline">₹100</div>
+                <div className="text-slate-500 text-[11px] font-medium group-hover:text-emerald-800 transition-colors">Min Starting Deposit &rarr;</div>
+              </a>
             </div>
             <div>
-              <div className="text-amber-700 font-extrabold text-base sm:text-lg">4.2 Mins</div>
-              <div className="text-slate-500 text-[11px] font-medium">Avg UPI Cashout Time</div>
+              <a
+                href="/instant-withdrawal-cricket-id"
+                onClick={(e) => handleNav(e, '/instant-withdrawal-cricket-id')}
+                className="group block"
+              >
+                <div className="text-amber-700 font-extrabold text-base sm:text-lg group-hover:underline">4.2 Mins</div>
+                <div className="text-slate-500 text-[11px] font-medium group-hover:text-amber-800 transition-colors">Avg UPI Cashout Time &rarr;</div>
+              </a>
             </div>
             <div>
-              <div className="text-slate-900 font-extrabold text-base sm:text-lg">100%</div>
-              <div className="text-slate-500 text-[11px] font-medium">Payout Honor Guarantee</div>
+              <a
+                href="/all-cricket-id"
+                onClick={(e) => handleNav(e, '/all-cricket-id')}
+                className="group block"
+              >
+                <div className="text-slate-900 font-extrabold text-base sm:text-lg group-hover:underline">100%</div>
+                <div className="text-slate-500 text-[11px] font-medium group-hover:text-emerald-800 transition-colors">Payout Honor Guarantee &rarr;</div>
+              </a>
             </div>
           </div>
         </div>

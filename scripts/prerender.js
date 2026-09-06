@@ -26,15 +26,7 @@ function generateHomeHtml(baseTemplate) {
         name: 'What is the minimum amount to get an Online Cricket ID?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Most platforms require ₹100 to ₹500. We offer ₹100 minimum deposit for most ID types.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Can I get a Cricket ID without KYC?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Yes, many platforms issue IDs with just a name and phone number. However, KYC verification is recommended for large withdrawals.',
+          text: 'Most platforms require ₹100 to ₹500. We offer a ₹100 minimum deposit cricket ID for most ID types. You can also test features with a free demo cricket ID before depositing real funds.',
         },
       },
       {
@@ -42,15 +34,7 @@ function generateHomeHtml(baseTemplate) {
         name: 'How fast can I withdraw money?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Withdrawals process in 2-15 minutes via UPI depending on the provider and time of day.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Can I use one Cricket ID on mobile?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Yes, most IDs work on mobile through apps or browsers. Your login works on any device.',
+          text: 'Withdrawals process in 2 to 15 minutes via UPI depending on the exchange and time of day. Check our instant withdrawal guide for step-by-step cashout tips and verified payout rules.',
         },
       },
       {
@@ -58,7 +42,23 @@ function generateHomeHtml(baseTemplate) {
         name: 'Which platform is best for IPL betting?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'We provide specialized IPL Cricket ID with exclusive markets, live odds, and real-time updates.',
+          text: 'We provide specialized IPL 2026 Cricket IDs with ball-by-ball session rates, live in-play trading, and high liquidity across Laser247 and Lotus365.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I use one Cricket ID on mobile?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, all IDs work smoothly on mobile browsers as well as dedicated exchange apps. Compare features across all options in our 20+ cricket ID comparison directory.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I get a Cricket ID without complex paperwork?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, you can register and activate an ID with just your name and WhatsApp number in under 2 minutes. Follow our step-by-step account setup guide.',
         },
       },
       {
@@ -66,7 +66,7 @@ function generateHomeHtml(baseTemplate) {
         name: 'Is online cricket betting legal in India?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'As of August 2026, real-money online games including cricket betting are banned under the Online Gaming Act, 2025. Consult a qualified lawyer for specific advice.',
+          text: 'Real-money gaming is subject to state-level regulations under the Online Gaming Act, 2025. Please review our comprehensive legal status and compliance guide or consult our terms and legal policy.',
         },
       },
     ],
@@ -184,15 +184,25 @@ function generateHomeHtml(baseTemplate) {
                   <span class="text-emerald-700">Online Cricket ID</span> Platform
                 </h1>
                 <p class="text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                  Official direct access to <strong>Laser247, Lotus365, Betbhai9</strong>, and <strong>IPL 2026 Exchanges</strong> with instant 2-minute WhatsApp activation and 5-minute automated UPI cashouts.
+                  Official direct access to <a href="/laser247-cricket-id" class="font-bold text-emerald-800 underline hover:text-emerald-950">Laser247</a>, <a href="/lotus365-cricket-id" class="font-bold text-emerald-800 underline hover:text-emerald-950">Lotus365</a>, <a href="/betbhai9-cricket-id" class="font-bold text-emerald-800 underline hover:text-emerald-950">Betbhai9</a>, and <a href="/ipl-cricket-id" class="font-bold text-emerald-800 underline hover:text-emerald-950">IPL 2026 Exchanges</a> with instant 2-minute WhatsApp activation and <a href="/instant-withdrawal-cricket-id" class="text-slate-700 underline hover:text-emerald-800">5-minute automated UPI cashouts</a>.
                 </p>
                 <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 pt-2">
                   <a href="https://wa.link/onlinecricketid" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl text-base font-extrabold text-white bg-emerald-600 hover:bg-emerald-700 shadow-md shadow-emerald-600/20 min-h-[48px] transition-all">
                     Get Your ID on WhatsApp
                   </a>
                   <a href="/all-cricket-id" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-sm font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-200 min-h-[48px] transition-colors">
-                    Explore 88+ Platforms
+                    Explore 20+ Platforms
                   </a>
+                </div>
+                <div class="flex flex-wrap items-center justify-center lg:justify-start gap-x-3 gap-y-1.5 text-xs text-slate-500 pt-1">
+                  <span class="font-bold text-slate-700">Quick Links:</span>
+                  <a href="/ipl-cricket-id" class="text-emerald-800 font-semibold hover:underline">IPL 2026 Cricket ID</a>
+                  <span>•</span>
+                  <a href="/demo-cricket-id" class="text-emerald-800 font-semibold hover:underline">Free Demo ID</a>
+                  <span>•</span>
+                  <a href="/all-cricket-id" class="text-emerald-800 font-semibold hover:underline">All 20+ Platforms</a>
+                  <span>•</span>
+                  <a href="/guides/cricket-betting-deposit-upi" class="text-emerald-800 font-semibold hover:underline">UPI Deposit Guide</a>
                 </div>
                 <div class="grid grid-cols-3 gap-2 sm:gap-4 pt-6 border-t border-slate-100">
                   <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 text-center">
@@ -216,18 +226,18 @@ function generateHomeHtml(baseTemplate) {
                     <span class="text-xs text-slate-500 font-bold">IPL 2026 Special</span>
                   </div>
                   <div class="space-y-3">
-                    <div class="p-3 bg-white rounded-xl border border-slate-200 flex justify-between items-center">
-                      <span class="text-xs font-bold text-slate-700">Laser247 Cricket ID</span>
+                    <a href="/laser247-cricket-id" class="p-3 bg-white rounded-xl border border-slate-200 flex justify-between items-center hover:border-emerald-300 transition-colors block">
+                      <span class="text-xs font-bold text-slate-700 hover:text-emerald-700">Laser247 Cricket ID</span>
                       <span class="text-xs font-extrabold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">Min ₹100</span>
-                    </div>
-                    <div class="p-3 bg-white rounded-xl border border-slate-200 flex justify-between items-center">
-                      <span class="text-xs font-bold text-slate-700">Lotus365 Cricket ID</span>
+                    </a>
+                    <a href="/lotus365-cricket-id" class="p-3 bg-white rounded-xl border border-slate-200 flex justify-between items-center hover:border-emerald-300 transition-colors block">
+                      <span class="text-xs font-bold text-slate-700 hover:text-emerald-700">Lotus365 Cricket ID</span>
                       <span class="text-xs font-extrabold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">Min ₹100</span>
-                    </div>
-                    <div class="p-3 bg-white rounded-xl border border-slate-200 flex justify-between items-center">
-                      <span class="text-xs font-bold text-slate-700">Betbhai9 Cricket ID</span>
+                    </a>
+                    <a href="/betbhai9-cricket-id" class="p-3 bg-white rounded-xl border border-slate-200 flex justify-between items-center hover:border-emerald-300 transition-colors block">
+                      <span class="text-xs font-bold text-slate-700 hover:text-emerald-700">Betbhai9 Cricket ID</span>
                       <span class="text-xs font-extrabold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">Min ₹100</span>
-                    </div>
+                    </a>
                   </div>
                   <a href="https://wa.link/onlinecricketid" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-3 bg-emerald-600 text-white font-extrabold text-sm rounded-xl min-h-[48px] flex items-center justify-center">
                     Activate ID via WhatsApp
@@ -375,17 +385,17 @@ function generateHomeHtml(baseTemplate) {
                 <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 relative">
                   <div class="w-8 h-8 rounded-full bg-emerald-600 text-white font-black text-sm flex items-center justify-center mb-3">1</div>
                   <h3 class="font-extrabold text-slate-900 text-base mb-1">Connect on WhatsApp</h3>
-                  <p class="text-slate-600 text-xs leading-relaxed">Click the WhatsApp button to start a chat with our official 24/7 team.</p>
+                  <p class="text-slate-600 text-xs leading-relaxed">Click the WhatsApp button to connect with our official 24/7 team or browse <a href="/all-cricket-id" class="text-emerald-800 font-bold underline">all 20+ platforms</a>.</p>
                 </div>
                 <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 relative">
                   <div class="w-8 h-8 rounded-full bg-emerald-600 text-white font-black text-sm flex items-center justify-center mb-3">2</div>
-                  <h3 class="font-extrabold text-slate-900 text-base mb-1">Select Exchange & Deposit</h3>
-                  <p class="text-slate-600 text-xs leading-relaxed">Choose Laser247, Lotus365 or any exchange and deposit minimum ₹100 via secure UPI.</p>
+                  <h3 class="font-extrabold text-slate-900 text-base mb-1">Select Exchange &amp; Deposit</h3>
+                  <p class="text-slate-600 text-xs leading-relaxed">Choose <a href="/laser247-cricket-id" class="text-emerald-800 font-bold underline">Laser247</a>, <a href="/lotus365-cricket-id" class="text-emerald-800 font-bold underline">Lotus365</a>, and follow our <a href="/guides/cricket-betting-deposit-upi" class="text-emerald-800 font-bold underline">UPI deposit guide</a>.</p>
                 </div>
                 <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 relative">
                   <div class="w-8 h-8 rounded-full bg-emerald-600 text-white font-black text-sm flex items-center justify-center mb-3">3</div>
                   <h3 class="font-extrabold text-slate-900 text-base mb-1">Receive Credentials Instantly</h3>
-                  <p class="text-slate-600 text-xs leading-relaxed">Get your official username and password with 100% welcome bonus in under 120 seconds.</p>
+                  <p class="text-slate-600 text-xs leading-relaxed">Get your official username and password, or test with a <a href="/demo-cricket-id" class="text-emerald-800 font-bold underline">free demo cricket ID</a> first.</p>
                 </div>
               </div>
             </div>

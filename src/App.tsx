@@ -175,7 +175,7 @@ function App() {
         {currentPath === '/' ? (
           <>
             {/* Hero Section: Bold headline, Get ID CTA, and immediate trust badges */}
-            <HeroSection onExploreClick={scrollToPlatforms} />
+            <HeroSection onExploreClick={scrollToPlatforms} onNavigate={navigate} />
 
             {/* Zero-CLS Verified Payout Stream Ticker */}
             <LivePayoutTicker />
@@ -185,19 +185,17 @@ function App() {
               onSelectPlatform={navigate}
             />
 
-
-
             {/* Trust & E-E-A-T Block: 3-step visual + 256-bit SSL Banking Security */}
-            <TrustEEATBlock />
+            <TrustEEATBlock onNavigate={navigate} />
 
             {/* Testimonials: Verified User Reviews */}
-            <Testimonials />
+            <Testimonials onNavigate={navigate} />
 
             {/* Programmatic Master Directory of 88+ IDs */}
             <SEODirectory onNavigate={navigate} />
 
             {/* Common FAQs */}
-            <FAQs />
+            <FAQs onNavigate={navigate} />
           </>
         ) : (
           <Suspense fallback={<RouteLoadingFallback />}>

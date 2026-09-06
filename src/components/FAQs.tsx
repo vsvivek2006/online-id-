@@ -5,36 +5,151 @@ import { useReveal } from '@/hooks/useReveal';
 
 const WHATSAPP_LINK = 'https://wa.link/onlinecricketid';
 
-const faqs = [
-  {
-    q: 'What is the minimum amount to get an Online Cricket ID?',
-    a: 'Most platforms require ₹100 to ₹500. We offer ₹100 minimum deposit for most ID types.',
-  },
-  {
-    q: 'Can I get a Cricket ID without KYC?',
-    a: 'Yes, many platforms issue IDs with just a name and phone number. However, KYC verification is recommended for large withdrawals.',
-  },
-  {
-    q: 'How fast can I withdraw money?',
-    a: 'Withdrawals process in 2-15 minutes via UPI depending on the provider and time of day.',
-  },
-  {
-    q: 'Can I use one Cricket ID on mobile?',
-    a: 'Yes, most IDs work on mobile through apps or browsers. Your login works on any device.',
-  },
-  {
-    q: 'Which platform is best for IPL betting?',
-    a: 'We provide specialized IPL Cricket ID with exclusive markets, live odds, and real-time updates.',
-  },
-  {
-    q: 'Is online cricket betting legal in India?',
-    a: 'As of August 2026, real-money online games including cricket betting are banned under the Online Gaming Act, 2025. Consult a qualified lawyer for specific advice.',
-  },
-];
+interface FAQsProps {
+  onNavigate?: (path: string) => void;
+}
 
-export default function FAQs() {
+export default function FAQs({ onNavigate }: FAQsProps) {
   const { ref, visible } = useReveal<HTMLDivElement>();
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+
+  const handleNav = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
+    if (onNavigate) {
+      e.preventDefault();
+      onNavigate(path);
+    }
+  };
+
+  const faqs = [
+    {
+      q: 'What is the minimum amount to get an Online Cricket ID?',
+      a: (
+        <>
+          Most platforms require ₹100 to ₹500. We offer a{' '}
+          <a
+            href="/minimum-deposit-cricket-id"
+            onClick={(e) => handleNav(e, '/minimum-deposit-cricket-id')}
+            className="font-semibold text-emerald-800 underline hover:text-emerald-950"
+          >
+            ₹100 minimum deposit cricket ID
+          </a>{' '}
+          for most ID types. You can also test features first with a{' '}
+          <a
+            href="/demo-cricket-id"
+            onClick={(e) => handleNav(e, '/demo-cricket-id')}
+            className="font-semibold text-emerald-800 underline hover:text-emerald-950"
+          >
+            free demo cricket ID
+          </a>{' '}
+          before depositing real funds.
+        </>
+      ),
+    },
+    {
+      q: 'How fast can I withdraw money?',
+      a: (
+        <>
+          Withdrawals process in 2 to 15 minutes via UPI depending on the exchange and time of day. Check our{' '}
+          <a
+            href="/instant-withdrawal-cricket-id"
+            onClick={(e) => handleNav(e, '/instant-withdrawal-cricket-id')}
+            className="font-semibold text-emerald-800 underline hover:text-emerald-950"
+          >
+            instant withdrawal guide
+          </a>{' '}
+          for step-by-step cashout tips and verified payout rules.
+        </>
+      ),
+    },
+    {
+      q: 'Which platform is best for IPL betting?',
+      a: (
+        <>
+          We provide specialized{' '}
+          <a
+            href="/ipl-cricket-id"
+            onClick={(e) => handleNav(e, '/ipl-cricket-id')}
+            className="font-semibold text-emerald-800 underline hover:text-emerald-950"
+          >
+            IPL 2026 Cricket IDs
+          </a>{' '}
+          with ball-by-ball session rates, live in-play trading, and high liquidity across{' '}
+          <a
+            href="/laser247-cricket-id"
+            onClick={(e) => handleNav(e, '/laser247-cricket-id')}
+            className="font-semibold text-emerald-800 underline hover:text-emerald-950"
+          >
+            Laser247
+          </a>{' '}
+          and{' '}
+          <a
+            href="/lotus365-cricket-id"
+            onClick={(e) => handleNav(e, '/lotus365-cricket-id')}
+            className="font-semibold text-emerald-800 underline hover:text-emerald-950"
+          >
+            Lotus365
+          </a>
+          .
+        </>
+      ),
+    },
+    {
+      q: 'Can I use one Cricket ID on mobile?',
+      a: (
+        <>
+          Yes, all IDs work smoothly on mobile browsers as well as dedicated exchange apps. Compare features across all options in our{' '}
+          <a
+            href="/all-cricket-id"
+            onClick={(e) => handleNav(e, '/all-cricket-id')}
+            className="font-semibold text-emerald-800 underline hover:text-emerald-950"
+          >
+            20+ cricket ID comparison directory
+          </a>
+          .
+        </>
+      ),
+    },
+    {
+      q: 'Can I get a Cricket ID without complex paperwork?',
+      a: (
+        <>
+          Yes, you can register and activate an ID with just your name and WhatsApp number in under 2 minutes. Learn more in our{' '}
+          <a
+            href="/how-to-get-online-cricket-id"
+            onClick={(e) => handleNav(e, '/how-to-get-online-cricket-id')}
+            className="font-semibold text-emerald-800 underline hover:text-emerald-950"
+          >
+            step-by-step account setup guide
+          </a>
+          .
+        </>
+      ),
+    },
+    {
+      q: 'Is online cricket betting legal in India?',
+      a: (
+        <>
+          Real-money gaming is subject to state-level regulations under the Online Gaming Act, 2025. Please review our comprehensive{' '}
+          <a
+            href="/guides/cricket-betting-legal-india"
+            onClick={(e) => handleNav(e, '/guides/cricket-betting-legal-india')}
+            className="font-semibold text-emerald-800 underline hover:text-emerald-950"
+          >
+            legal status and compliance guide
+          </a>{' '}
+          or consult our{' '}
+          <a
+            href="/legal"
+            onClick={(e) => handleNav(e, '/legal')}
+            className="font-semibold text-emerald-800 underline hover:text-emerald-950"
+          >
+            terms and legal policy
+          </a>
+          .
+        </>
+      ),
+    },
+  ];
 
   return (
     <section id="faqs" className="py-12 sm:py-16 bg-slate-50 border-b border-slate-200">

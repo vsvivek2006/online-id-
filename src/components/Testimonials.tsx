@@ -77,8 +77,34 @@ const testimonials = [
   },
 ];
 
-export default function Testimonials() {
+interface TestimonialsProps {
+  onNavigate?: (path: string) => void;
+}
+
+const getPlatformSlug = (platformName: string) => {
+  switch (platformName.toLowerCase()) {
+    case 'laser247':
+      return '/reviews/laser247';
+    case 'lotus365':
+      return '/reviews/lotus365';
+    case 'betbhai9':
+      return '/reviews/betbhai9';
+    case 'silver exchange':
+      return '/reviews/silver-exchange';
+    default:
+      return '/all-cricket-id';
+  }
+};
+
+export default function Testimonials({ onNavigate }: TestimonialsProps) {
   const { ref, visible } = useReveal<HTMLDivElement>();
+
+  const handleNav = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
+    if (onNavigate) {
+      e.preventDefault();
+      onNavigate(path);
+    }
+  };
 
   return (
     <section id="testimonials" className="py-12 sm:py-16 bg-slate-50 border-b border-slate-200">
@@ -156,10 +182,15 @@ export default function Testimonials() {
                   </div>
                 </div>
 
-                {/* Platform Tag */}
-                <span className="shrink-0 px-2 py-0.5 rounded-md bg-emerald-50 border border-emerald-200 text-emerald-800 text-[10px] font-bold uppercase tracking-wide">
+                {/* Platform Review Link */}
+                <a
+                  href={getPlatformSlug(t.platform)}
+                  onClick={(e) => handleNav(e, getPlatformSlug(t.platform))}
+                  className="shrink-0 px-2.5 py-0.5 rounded-md bg-emerald-50 border border-emerald-200 text-emerald-800 text-[10px] font-bold uppercase tracking-wide hover:bg-emerald-100 hover:border-emerald-300 transition-colors"
+                  title={`${t.platform} Review`}
+                >
                   {t.platform}
-                </span>
+                </a>
               </div>
 
               {/* Star Rating */}

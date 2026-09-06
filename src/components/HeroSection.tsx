@@ -6,9 +6,17 @@ const WHATSAPP_LINK = 'https://wa.link/onlinecricketid';
 
 interface HeroSectionProps {
   onExploreClick?: () => void;
+  onNavigate?: (path: string) => void;
 }
 
-export default function HeroSection({ onExploreClick }: HeroSectionProps) {
+export default function HeroSection({ onExploreClick, onNavigate }: HeroSectionProps) {
+  const handleNav = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
+    if (onNavigate) {
+      e.preventDefault();
+      onNavigate(path);
+    }
+  };
+
   const getBadgeIcon = (iconName: string) => {
     switch (iconName) {
       case 'support':
@@ -40,7 +48,14 @@ export default function HeroSection({ onExploreClick }: HeroSectionProps) {
             </span>
             <span>Verified Exchange Partner 2026</span>
             <span className="text-slate-300">•</span>
-            <span className="text-slate-600 font-medium">₹100 Min Deposit</span>
+            <a
+              href="/minimum-deposit-cricket-id"
+              onClick={(e) => handleNav(e, '/minimum-deposit-cricket-id')}
+              className="text-emerald-900 font-semibold hover:underline"
+              title="Minimum ₹100 Deposit Cricket ID"
+            >
+              ₹100 Min Deposit
+            </a>
           </motion.div>
 
           {/* Semantic H1: Bold Headline */}
@@ -54,14 +69,59 @@ export default function HeroSection({ onExploreClick }: HeroSectionProps) {
             <span className="text-emerald-700">Online Cricket ID Platform</span>
           </motion.h1>
 
-          {/* Subtitle */}
+          {/* Subtitle with Contextual Internal Hyperlinks */}
           <motion.p
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.45, delay: 0.2 }}
             className="text-slate-600 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed"
           >
-            Get instant access to Laser247, Lotus365, Betbhai9, and Silver Exchange. Enjoy the best match odds, zero fees on withdrawals, and instant 2-minute activation on WhatsApp.
+            Get instant access to{' '}
+            <a
+              href="/laser247-cricket-id"
+              onClick={(e) => handleNav(e, '/laser247-cricket-id')}
+              className="font-bold text-emerald-800 underline decoration-emerald-400 underline-offset-2 hover:text-emerald-950 transition-colors"
+              title="Laser247 Cricket ID"
+            >
+              Laser247
+            </a>
+            ,{' '}
+            <a
+              href="/lotus365-cricket-id"
+              onClick={(e) => handleNav(e, '/lotus365-cricket-id')}
+              className="font-bold text-emerald-800 underline decoration-emerald-400 underline-offset-2 hover:text-emerald-950 transition-colors"
+              title="Lotus365 Cricket ID"
+            >
+              Lotus365
+            </a>
+            ,{' '}
+            <a
+              href="/betbhai9-cricket-id"
+              onClick={(e) => handleNav(e, '/betbhai9-cricket-id')}
+              className="font-bold text-emerald-800 underline decoration-emerald-400 underline-offset-2 hover:text-emerald-950 transition-colors"
+              title="Betbhai9 Cricket ID"
+            >
+              Betbhai9
+            </a>
+            , and{' '}
+            <a
+              href="/silver-exchange-cricket-id"
+              onClick={(e) => handleNav(e, '/silver-exchange-cricket-id')}
+              className="font-bold text-emerald-800 underline decoration-emerald-400 underline-offset-2 hover:text-emerald-950 transition-colors"
+              title="Silver Exchange Cricket ID"
+            >
+              Silver Exchange
+            </a>
+            . Enjoy best match odds, zero fees on{' '}
+            <a
+              href="/instant-withdrawal-cricket-id"
+              onClick={(e) => handleNav(e, '/instant-withdrawal-cricket-id')}
+              className="font-semibold text-slate-800 underline decoration-slate-300 underline-offset-2 hover:text-emerald-800 transition-colors"
+              title="Instant UPI Withdrawals"
+            >
+              withdrawals
+            </a>
+            , and instant 2-minute activation on WhatsApp.
           </motion.p>
 
           {/* CTAs with 48px Minimum Touch Target */}
@@ -90,9 +150,50 @@ export default function HeroSection({ onExploreClick }: HeroSectionProps) {
               whileTap={{ scale: 0.98 }}
               className="w-full sm:w-auto min-h-[48px] px-6 py-3.5 rounded-xl bg-white hover:bg-slate-50 text-slate-800 font-bold text-xs sm:text-sm flex items-center justify-center gap-1.5 border border-slate-200 hover:border-slate-300 transition-all shadow-2xs"
             >
-              <span>Explore 8+ Verified Platforms</span>
+              <span>Explore 20+ Verified Platforms</span>
               <ArrowRight className="w-4 h-4 text-emerald-600" />
             </motion.button>
+          </motion.div>
+
+          {/* Contextual SEO Quick Access Links */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.4, delay: 0.35 }}
+            className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1.5 text-xs text-slate-500 pt-1"
+          >
+            <span className="font-bold text-slate-700">Quick Links:</span>
+            <a
+              href="/ipl-cricket-id"
+              onClick={(e) => handleNav(e, '/ipl-cricket-id')}
+              className="text-emerald-800 font-semibold hover:underline hover:text-emerald-950"
+            >
+              IPL 2026 Cricket ID
+            </a>
+            <span className="text-slate-300">•</span>
+            <a
+              href="/demo-cricket-id"
+              onClick={(e) => handleNav(e, '/demo-cricket-id')}
+              className="text-emerald-800 font-semibold hover:underline hover:text-emerald-950"
+            >
+              Free Demo ID
+            </a>
+            <span className="text-slate-300">•</span>
+            <a
+              href="/all-cricket-id"
+              onClick={(e) => handleNav(e, '/all-cricket-id')}
+              className="text-emerald-800 font-semibold hover:underline hover:text-emerald-950"
+            >
+              All 20+ Platforms
+            </a>
+            <span className="text-slate-300">•</span>
+            <a
+              href="/guides/cricket-betting-deposit-upi"
+              onClick={(e) => handleNav(e, '/guides/cricket-betting-deposit-upi')}
+              className="text-emerald-800 font-semibold hover:underline hover:text-emerald-950"
+            >
+              UPI Deposit Guide
+            </a>
           </motion.div>
 
           {/* Immediate Trust Badges (YMYL Requirement: 24/7 Support, 5-Min Withdrawals, Secure Gateways) */}
