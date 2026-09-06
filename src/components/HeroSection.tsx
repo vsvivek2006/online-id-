@@ -105,8 +105,8 @@ export default function HeroSection({ onExploreClick, onNavigate }: HeroSectionP
             </a>
             , and{' '}
             <a
-              href="/silver-exchange-cricket-id"
-              onClick={(e) => handleNav(e, '/silver-exchange-cricket-id')}
+              href="/silver-exchange-id"
+              onClick={(e) => handleNav(e, '/silver-exchange-id')}
               className="font-bold text-emerald-800 underline decoration-emerald-400 underline-offset-2 hover:text-emerald-950 transition-colors"
               title="Silver Exchange Cricket ID"
             >

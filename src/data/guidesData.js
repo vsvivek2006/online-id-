@@ -18,7 +18,7 @@ export const GUIDES = {
     ],
     htmlContent: `
 <h2 id="which-upi">Which UPI Apps Are Supported?</h2>
-<p>All major cricket exchanges in our network — including <a href="/laser247-cricket-id">Laser247</a>, <a href="/lotus365-cricket-id">Lotus365</a>, <a href="/betbhai9-cricket-id">Betbhai9</a>, <a href="/silver-exchange-cricket-id">Silver Exchange</a>, and <a href="/diamond-exchange-cricket-id">Diamond Exchange</a> — support the following UPI apps for instant deposits:</p>
+<p>All major cricket exchanges in our network — including <a href="/laser247-cricket-id">Laser247</a>, <a href="/lotus365-cricket-id">Lotus365</a>, <a href="/betbhai9-cricket-id">Betbhai9</a>, <a href="/silver-exchange-id">Silver Exchange</a>, and <a href="/diamond-exchange-id">Diamond Exchange</a> — support the following UPI apps for instant deposits:</p>
 <ul>
   <li><strong>PhonePe</strong> — fastest credit speed, recommended for amounts above ₹5,000</li>
   <li><strong>Google Pay (GPay)</strong> — reliable, works on all Android and iOS devices</li>
@@ -49,8 +49,8 @@ export const GUIDES = {
     <tr><td><a href="/laser247-cricket-id">Laser247</a></td><td>₹100</td><td>₹5,00,000</td></tr>
     <tr><td><a href="/lotus365-cricket-id">Lotus365</a></td><td>₹100</td><td>₹5,00,000</td></tr>
     <tr><td><a href="/betbhai9-cricket-id">Betbhai9</a></td><td>₹100</td><td>₹10,00,000</td></tr>
-    <tr><td><a href="/diamond-exchange-cricket-id">Diamond Exchange</a></td><td>₹100</td><td>₹5,00,000</td></tr>
-    <tr><td><a href="/silver-exchange-cricket-id">Silver Exchange</a></td><td>₹100</td><td>₹5,00,000</td></tr>
+    <tr><td><a href="/diamond-exchange-id">Diamond Exchange</a></td><td>₹100</td><td>₹5,00,000</td></tr>
+    <tr><td><a href="/silver-exchange-id">Silver Exchange</a></td><td>₹100</td><td>₹5,00,000</td></tr>
   </tbody>
 </table>
 
@@ -115,10 +115,10 @@ export const GUIDES = {
   <thead><tr><th>Exchange</th><th>Average Speed</th><th>Peak Hours (7–11 PM)</th></tr></thead>
   <tbody>
     <tr><td><a href="/reviews/laser247">Laser247</a></td><td>2–5 min</td><td>Up to 15 min</td></tr>
-    <tr><td><a href="/diamond-exchange-cricket-id">Diamond Exchange</a></td><td>3–8 min</td><td>Up to 15 min</td></tr>
+    <tr><td><a href="/diamond-exchange-id">Diamond Exchange</a></td><td>3–8 min</td><td>Up to 15 min</td></tr>
     <tr><td><a href="/reviews/lotus365">Lotus365</a></td><td>3–10 min</td><td>Up to 20 min</td></tr>
     <tr><td><a href="/betbhai9-cricket-id">Betbhai9</a></td><td>5–12 min</td><td>Up to 25 min</td></tr>
-    <tr><td><a href="/silver-exchange-cricket-id">Silver Exchange</a></td><td>5–15 min</td><td>Up to 30 min</td></tr>
+    <tr><td><a href="/silver-exchange-id">Silver Exchange</a></td><td>5–15 min</td><td>Up to 30 min</td></tr>
   </tbody>
 </table>
 
@@ -175,7 +175,7 @@ export const GUIDES = {
     <tr><td>Best mobile app</td><td><a href="/reviews/lotus365">Lotus365</a></td></tr>
     <tr><td>Highest bet limits</td><td><a href="/betbhai9-cricket-id">Betbhai9</a> / Diamond Exchange</td></tr>
     <tr><td>Best cashback</td><td>Fairplay Club</td></tr>
-    <tr><td>Lowest margins</td><td><a href="/silver-exchange-cricket-id">Silver Exchange</a></td></tr>
+    <tr><td>Lowest margins</td><td><a href="/silver-exchange-id">Silver Exchange</a></td></tr>
     <tr><td>International cricket (BBL, PSL)</td><td>SkyExchange</td></tr>
     <tr><td>Session betting focus</td><td>World777</td></tr>
   </tbody>

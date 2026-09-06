@@ -380,7 +380,7 @@ function generateHomeHtml(baseTemplate) {
                 <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 relative">
                   <div class="w-8 h-8 rounded-full bg-emerald-600 text-white font-black text-sm flex items-center justify-center mb-3">2</div>
                   <h3 class="font-extrabold text-slate-900 text-base mb-1">Select Exchange &amp; Deposit</h3>
-                  <p class="text-slate-600 text-xs leading-relaxed">Choose <a href="/laser247-cricket-id" class="text-emerald-800 font-bold underline">Laser247</a>, <a href="/lotus365-cricket-id" class="text-emerald-800 font-bold underline">Lotus365</a>, and follow our <a href="/guides/cricket-betting-deposit-upi" class="text-emerald-800 font-bold underline">UPI deposit guide</a>.</p>
+                  <p class="text-slate-600 text-xs leading-relaxed">Choose <a href="/laser247-cricket-id" class="text-emerald-800 font-bold underline">Laser247</a>, <a href="/lotus365-cricket-id" class="text-emerald-800 font-bold underline">Lotus365</a>, and follow our <a href="/guides/how-to-deposit-upi" class="text-emerald-800 font-bold underline">UPI deposit guide</a>.</p>
                 </div>
                 <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 relative">
                   <div class="w-8 h-8 rounded-full bg-emerald-600 text-white font-black text-sm flex items-center justify-center mb-3">3</div>

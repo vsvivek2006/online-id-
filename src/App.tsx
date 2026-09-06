@@ -83,21 +83,52 @@ function App() {
     }
   };
 
-  // Find if current path matches an SEO page
+  // Slug alias mappings to prevent 404s on common query variations and legacy links
+  const SLUG_ALIASES: Record<string, string> = {
+    'silver-exchange-cricket-id': 'silver-exchange-id',
+    'diamond-exchange-cricket-id': 'diamond-exchange-id',
+    'tiger-exchange-cricket-id': 'tiger-exchange-id',
+    'skyexchange-cricket-id': 'skyexchange-id',
+    'lords-exchange-cricket-id': 'lords-exchange-id',
+    'world777-cricket-id': 'world777-id',
+    'fairplay-cricket-id': 'fairplay-id',
+  };
+
+  const GUIDE_ALIASES: Record<string, string> = {
+    'cricket-betting-deposit-upi': 'how-to-deposit-upi',
+    'cricket-betting-withdraw-upi': 'how-to-withdraw-upi',
+    'deposit-upi': 'how-to-deposit-upi',
+    'withdraw-upi': 'how-to-withdraw-upi',
+  };
+
+  const REVIEW_ALIASES: Record<string, string> = {
+    'silver-exchange-id': 'silver-exchange',
+    'silver-exchange-cricket-id': 'silver-exchange',
+    'diamond-exchange-id': 'diamond-exchange',
+    'diamond-exchange-cricket-id': 'diamond-exchange',
+    'laser247-cricket-id': 'laser247',
+    'lotus365-cricket-id': 'lotus365',
+    'betbhai9-cricket-id': 'betbhai9',
+  };
+
+  // Find if current path matches an SEO page (with alias fallback)
   const slug = currentPath.replace(/^\//, '');
-  const pageData = SEO_PAGES[slug];
+  const resolvedSlug = SLUG_ALIASES[slug] || slug;
+  const pageData = SEO_PAGES[resolvedSlug];
 
   // Find if current path matches a platform review page (/reviews/[slug])
   const reviewSlug = currentPath.startsWith('/reviews/')
     ? currentPath.replace(/^\/reviews\//, '')
     : null;
-  const reviewData = reviewSlug ? PLATFORM_REVIEWS[reviewSlug] : null;
+  const resolvedReviewSlug = reviewSlug ? (REVIEW_ALIASES[reviewSlug] || reviewSlug) : null;
+  const reviewData = resolvedReviewSlug ? PLATFORM_REVIEWS[resolvedReviewSlug] : null;
 
   // Find if current path matches a guide article (/guides/[slug])
   const guideSlug = currentPath.startsWith('/guides/')
     ? currentPath.replace(/^\/guides\//, '')
     : null;
-  const guideArticle = guideSlug ? GUIDES[guideSlug] : null;
+  const resolvedGuideSlug = guideSlug ? (GUIDE_ALIASES[guideSlug] || guideSlug) : null;
+  const guideArticle = resolvedGuideSlug ? GUIDES[resolvedGuideSlug] : null;
 
   // Global WebSite Schema JSON-LD for Homepage
   const websiteSchema = {

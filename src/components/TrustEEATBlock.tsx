@@ -110,8 +110,8 @@ export default function TrustEEATBlock({ onNavigate }: TrustEEATBlockProps) {
                 <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
                   Scan the verified merchant UPI QR code using PhonePe, GPay, or Paytm. Follow our{' '}
                   <a
-                    href="/guides/cricket-betting-deposit-upi"
-                    onClick={(e) => handleNav(e, '/guides/cricket-betting-deposit-upi')}
+                    href="/guides/how-to-deposit-upi"
+                    onClick={(e) => handleNav(e, '/guides/how-to-deposit-upi')}
                     className="font-bold text-emerald-800 underline decoration-emerald-300 hover:text-emerald-950"
                   >
                     UPI deposit guide
