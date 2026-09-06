@@ -10,8 +10,7 @@ import Testimonials from '@/components/Testimonials';
 import SEODirectory from '@/components/SEODirectory';
 import FAQs from '@/components/FAQs';
 import ComplianceFooter from '@/components/ComplianceFooter';
-import FloatingWhatsApp from '@/components/FloatingWhatsApp';
-import ScrollToTop from '@/components/ScrollToTop';
+import FloatingActions from '@/components/FloatingActions';
 
 import { SEO_PAGES } from '@/data/seoPages';
 import { PLATFORM_REVIEWS } from '@/data/platformReviews';
@@ -253,11 +252,8 @@ function App() {
       {/* Compliance Footer: verified business info & legal disclosure */}
       <ComplianceFooter onNavigate={navigate} />
 
-      {/* Desktop Floating Scroll-to-Top in Top Right */}
-      <ScrollToTop />
-
-      {/* Floating WhatsApp on Desktop */}
-      <FloatingWhatsApp />
+      {/* Floating Bottom-Right Actions: Always-visible Get Cricket ID + Contextual Scroll-to-Top */}
+      <FloatingActions />
     </div>
   );
 }
