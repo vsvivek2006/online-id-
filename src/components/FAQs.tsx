@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { ChevronDown, MessageCircle, HelpCircle } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useReveal } from '@/hooks/useReveal';
 
 const WHATSAPP_LINK = 'https://wa.link/onlinecricketid';
@@ -62,7 +63,7 @@ export default function FAQs() {
                 <button
                   type="button"
                   onClick={() => setOpenIndex(isOpen ? null : i)}
-                  className="w-full text-left p-4 sm:p-5 flex items-center justify-between gap-4 font-bold text-slate-900 text-xs sm:text-sm"
+                  className="w-full text-left p-4 sm:p-5 flex items-center justify-between gap-4 font-bold text-slate-900 text-xs sm:text-sm cursor-pointer"
                   aria-expanded={isOpen}
                 >
                   <span>{faq.q}</span>
@@ -72,17 +73,21 @@ export default function FAQs() {
                     }`}
                   />
                 </button>
-                {/* CSS-based visibility: always in DOM for bot indexing, visually toggled via max-h */}
-                <div
-                  className={`overflow-hidden transition-all duration-300 ${
-                    isOpen ? 'max-h-[500px]' : 'max-h-0'
-                  }`}
-                  aria-hidden={!isOpen}
-                >
-                  <div className="px-4 sm:px-5 pb-4 pt-1 text-slate-600 text-xs sm:text-sm leading-relaxed border-t border-slate-100">
-                    {faq.a}
-                  </div>
-                </div>
+                <AnimatePresence initial={false}>
+                  {isOpen && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.25, ease: 'easeInOut' }}
+                      className="overflow-hidden"
+                    >
+                      <div className="px-4 sm:px-5 pb-4 pt-1 text-slate-600 text-xs sm:text-sm leading-relaxed border-t border-slate-100">
+                        {faq.a}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
             );
           })}

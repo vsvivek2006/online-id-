@@ -18,6 +18,7 @@ export default defineConfig({
       output: {
         manualChunks: {
           'vendor-react': ['react', 'react-dom', 'react-helmet-async'],
+          'vendor-motion': ['framer-motion'],
           'vendor-icons': ['lucide-react'],
         },
       },

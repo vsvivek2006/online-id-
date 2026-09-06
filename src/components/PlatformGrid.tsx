@@ -1,4 +1,5 @@
 import { Star, MessageCircle, ArrowRight, ShieldCheck } from 'lucide-react';
+import { motion } from 'framer-motion';
 import { PlatformCardItem } from '@/types/platform';
 import { PLATFORM_CARDS } from '@/data/platformData';
 
@@ -46,8 +47,9 @@ export default function PlatformGrid({ onSelectPlatform }: PlatformGridProps) {
         {/* 2-Column Mobile Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-5">
           {PLATFORM_CARDS.map((platform) => (
-            <div
+            <motion.div
               key={platform.id}
+              whileHover={{ y: -4, transition: { duration: 0.2 } }}
               className={`bg-white rounded-2xl p-4 sm:p-5 border transition-all shadow-2xs hover:shadow-xs flex flex-col justify-between relative group ${
                 platform.featured
                   ? 'border-emerald-500/80 ring-1 ring-emerald-500/20'
@@ -125,7 +127,7 @@ export default function PlatformGrid({ onSelectPlatform }: PlatformGridProps) {
                 </a>
               </div>
 
-            </div>
+            </motion.div>
           ))}
         </div>
 

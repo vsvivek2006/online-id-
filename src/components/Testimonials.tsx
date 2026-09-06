@@ -1,4 +1,5 @@
 import { Star, BadgeCheck } from 'lucide-react';
+import { motion } from 'framer-motion';
 import { useReveal } from '@/hooks/useReveal';
 
 const testimonials = [
@@ -126,8 +127,9 @@ export default function Testimonials() {
         {/* Testimonial Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
           {testimonials.map((t) => (
-            <div
+            <motion.div
               key={t.id}
+              whileHover={{ y: -3, transition: { duration: 0.2 } }}
               className="bg-white rounded-2xl border border-slate-200 shadow-2xs hover:shadow-xs hover:border-emerald-300 transition-all p-5 flex flex-col gap-4"
             >
               {/* Top: Avatar + Name + Verified */}
@@ -182,7 +184,7 @@ export default function Testimonials() {
                   </span>
                 )}
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

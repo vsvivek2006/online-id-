@@ -1,4 +1,5 @@
 import { ShieldCheck, Lock, CheckCircle2, MessageCircle, Zap } from 'lucide-react';
+import { motion } from 'framer-motion';
 import { HOW_IT_WORKS_STEPS, SECURITY_FEATURES } from '@/data/platformData';
 
 const WHATSAPP_LINK = 'https://wa.link/onlinecricketid';
@@ -27,8 +28,9 @@ export default function TrustEEATBlock() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 relative">
             {HOW_IT_WORKS_STEPS.map((s) => (
-              <div
+              <motion.div
                 key={s.step}
+                whileHover={{ y: -3, transition: { duration: 0.2 } }}
                 className="bg-slate-50/80 rounded-2xl p-5 sm:p-6 border border-slate-200 shadow-2xs hover:border-emerald-400 hover:bg-white transition-all flex flex-col justify-between"
               >
                 <div>
@@ -52,7 +54,7 @@ export default function TrustEEATBlock() {
                   <span>Verified Process</span>
                   <CheckCircle2 className="w-4 h-4 text-emerald-600" />
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
 
@@ -88,9 +90,10 @@ export default function TrustEEATBlock() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             {SECURITY_FEATURES.map((item) => (
-              <div
+              <motion.div
                 key={item.id}
-                className="bg-white rounded-2xl p-5 border border-slate-200 shadow-2xs space-y-2"
+                whileHover={{ y: -3, transition: { duration: 0.2 } }}
+                className="bg-white rounded-2xl p-5 border border-slate-200 shadow-2xs space-y-2 hover:border-emerald-300 transition-colors"
               >
                 <div className="flex items-center justify-between">
                   <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-50 text-emerald-800 border border-emerald-200">
@@ -104,7 +107,7 @@ export default function TrustEEATBlock() {
                 <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                   {item.description}
                 </p>
-              </div>
+              </motion.div>
             ))}
           </div>
 

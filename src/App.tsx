@@ -11,6 +11,7 @@ import SEODirectory from '@/components/SEODirectory';
 import FAQs from '@/components/FAQs';
 import ComplianceFooter from '@/components/ComplianceFooter';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import ScrollToTop from '@/components/ScrollToTop';
 
 import { SEO_PAGES } from '@/data/seoPages';
 import { PLATFORM_REVIEWS } from '@/data/platformReviews';
@@ -253,6 +254,9 @@ function App() {
 
       {/* Compliance Footer: 18+ warning, responsible gaming disclaimer & verified business info */}
       <ComplianceFooter onNavigate={navigate} />
+
+      {/* Desktop Floating Scroll-to-Top in Top Right */}
+      <ScrollToTop />
 
       {/* Floating WhatsApp on Desktop */}
       <FloatingWhatsApp />
